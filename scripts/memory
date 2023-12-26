@@ -8,7 +8,7 @@ used_mem=$(free -m | awk '/Mem:/ {print $3}')
 memory_usage_percantagae=$((((used_mem * 100) / total_mem )))
 
 if [ -f "$colors_path" ]; then
-  echo "^c$color0^^b$color6^ $memory_usage_percantagae% ^d^^c$color0^^b$color1^ $memory_usage ^d^"
+  echo "^c$color0^^b$color6^ $memory_usage_percantagae ^d^^c$color0^^b$color1^ $memory_usage ^d^"
 else 
   echo "$(date +" %H:%M%p ")"
 fi
