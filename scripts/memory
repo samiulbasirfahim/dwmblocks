@@ -8,7 +8,7 @@ memory_usage_percantagae=$((((used_mem * 100) / total_mem )))
 
 if [ -f "$colors_path" ]; then
   source $colors_path
-  echo "^c$color0^^b$color6^ $memory_usage_percantagae ^d^^c$color0^^b$color8^ $memory_usage ^d^"
+  echo "^c$color0^^b$color2^ $memory_usage_percantagae ^d^^c$color0^^b$color8^ $memory_usage ^d^"
 else 
   echo " $memory_usage_percantagae  $memory_usage "
 fi

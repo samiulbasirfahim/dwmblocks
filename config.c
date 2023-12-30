@@ -4,18 +4,18 @@
 #include "util.h"
 
 Block blocks[] = {
-    // {"bdocker", 5,    3 },
-    // {"bplayerctl",    0,  1 },
-    // {"bplayerctl-previous", 1,    2 },
-    // {"bplayerctl-play", 1,    3 },
-    // {"bplayerctl-next", 1,    4 },
-    // {"bupdate", 1800,    5 },
-    // {"bmic",   0,    4 },
-    // {"bvolume",   0,    6 },
-    // {"bbattery",    60, 8 },
-    // {"bnetwork",  10,   7 },
-    {"$HOME/.suckless/dwmblocks/scripts/memory",     15,    10 },
-    {"$HOME/.suckless/dwmblocks/scripts/date",     15,    10 },
+  // {"bdocker", 5,    3 },
+  // {"bplayerctl",    0,  1 },
+  // {"bplayerctl-previous", 1,    2 },
+  // {"bplayerctl-play", 1,    3 },
+  // {"bplayerctl-next", 1,    4 },
+  // {"bupdate", 1800,    5 },
+  // {"bmic",   0,    4 },
+  // {"bvolume",   0,    6 },
+  // {"bbattery",    60, 8 },
+  // {"bnetwork",  10,   7 },
+    {"$HOME/.suckless/dwmblocks/scripts/memory", 5, 10},
+    {"$HOME/.suckless/dwmblocks/scripts/date",   15, 10},
 };
 
 const unsigned short blockCount = LEN(blocks);
