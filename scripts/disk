@@ -1,0 +1,9 @@
+
+colors_path=$HOME/.cache/wal/colors.sh
+if [ -f "$colors_path" ]; then
+  source $colors_path
+  echo "^c$color0^^b$color2^ $(df -h "/" | awk ' /[0-9]/ {print $3}') ^d^^c$color0^^b$color8^ $(df -h "/" | awk ' /[0-9]/ {print $2}') ^d^"
+  printf ""
+else 
+  printf "$(df -h "/" | awk ' /[0-9]/ {print $3 "/" $2}')"
+fi
