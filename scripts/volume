@@ -1,0 +1,16 @@
+#!/bin/sh
+colors_path=$HOME/.cache/wal/colors.sh
+
+vol=$(pamixer --get-volume --get-mute)
+
+if [ -f "$colors_path" ]; then
+  source $colors_path
+  if [ -n "${vol%%false*}" ] ; then
+      echo "^c$color0^^b$color2^ 󰝟 ^d^^c$color0^^b$color8^ "${vol##* }%" ^d^"
+  else
+      echo "^c$color0^^b$color2^  ^d^^c$color0^^b$color8^ "${vol##* }%" ^d^"
+  fi
+else 
+  echo "$(date +" %H:%M%p ")"
+fi
+
