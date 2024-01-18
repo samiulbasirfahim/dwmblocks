@@ -6,11 +6,9 @@ vol=$(pamixer --get-volume --get-mute)
 if [ -f "$colors_path" ]; then
   source $colors_path
   if [ -n "${vol%%false*}" ] ; then
-      echo "^c$color0^^b$color2^ 󰝟 ^d^^c$color0^^b$color8^ "${vol##* }%" ^d^"
+      echo "^c$color0^^b$color8^ Muted ^d^"
   else
-      echo "^c$color0^^b$color2^  ^d^^c$color0^^b$color8^ "${vol##* }%" ^d^"
+      echo "^c$color0^^b$color4^ "Vol: ${vol##* }%" ^d^"
   fi
-else 
-  echo "$(date +" %H:%M%p ")"
 fi
 

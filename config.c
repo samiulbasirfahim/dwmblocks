@@ -14,10 +14,11 @@ Block blocks[] = {
   // {"bvolume",   0,    6 },
   // {"bbattery",    60, 8 },
   // {"bnetwork",  10,   7 },
-    // {"$HOME/.suckless/dwmblocks/scripts/network", 5, 10},
-    // {"$HOME/.suckless/dwmblocks/scripts/volume", 5, 10},
-    {"$HOME/.suckless/dwmblocks/scripts/memory", 5, 10},
-    {"$HOME/.suckless/dwmblocks/scripts/date",   15, 10},
+  {"$HOME/.suckless/dwmblocks/scripts/network", 5, 10},
+    {"$HOME/.suckless/dwmblocks/scripts/volume", 1,  10},
+    {"$HOME/.suckless/dwmblocks/scripts/memory", 5,  10},
+    {"$HOME/.suckless/dwmblocks/scripts/date",   60, 10},
+    {"$HOME/.suckless/dwmblocks/scripts/time",   15, 10},
 };
 
 const unsigned short blockCount = LEN(blocks);

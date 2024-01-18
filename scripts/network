@@ -3,8 +3,8 @@ colors_path=$HOME/.cache/wal/colors.sh
 if [ -f "$colors_path" ]; then
   source $colors_path
   case "$(cat /sys/class/net/enp37s0/operstate)" in
-      up) echo "^c$color0^^b$color2^ 󰀂 ^d^^c$color0^^b$color8^ Connected ^d^" ;;
-      down) echo "^c$color0^^b$color2^  ^d^^c$color0^^b$color8^ Disconnected ^d^" ;;
+      up) echo "^c$color0^^b$color4^ Connected ^d^" ;;
+      down) echo "^c$color0^^b$color8^ Disconnected ^d^" ;;
   esac
 else 
   case "$(cat /sys/class/net/enp37s0/operstate)" in
