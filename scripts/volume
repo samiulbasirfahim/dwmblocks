@@ -6,9 +6,9 @@ vol=$(pamixer --get-volume --get-mute)
 if [ -f "$colors_path" ]; then
   source $colors_path
   if [ -n "${vol%%false*}" ] ; then
-      echo "^c$color0^^b$color8^ Muted ^d^"
+      echo "^b$color0^^c$color1^  ^d^"
   else
-      echo "^c$color0^^b$color8^ Vol: ^d^^c$color0^^b$color4^ ${vol##* }% ^d^"
+      echo "^c$color0^^b$color1^  ${vol##* }% ^d^"
   fi
 fi
 
