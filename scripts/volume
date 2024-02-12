@@ -1,14 +1,10 @@
 #!/bin/sh
 colors_path=$HOME/.cache/wal/colors.sh
 
-vol=$(pamixer --get-volume --get-mute)
+vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk -F "Volume: " '{print $2}')
 
 if [ -f "$colors_path" ]; then
   source $colors_path
-  if [ -n "${vol%%false*}" ] ; then
-      echo "^b$color0^^c$color1^  ^d^"
-  else
-      echo "^c$color0^^b$color1^  ${vol##* }% ^d^"
-  fi
+  echo "^c$color0^^b$color1^  $vol " 
 fi
 

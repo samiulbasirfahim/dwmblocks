@@ -15,6 +15,7 @@ Block blocks[] = {
   // {"bnetwork",  10,   7 },
   // {"$HOME/.suckless/dwmblocks/scripts/network", 5,  10},
     {"$HOME/.suckless/dwmblocks/scripts/volume", 1,  10},
+    {"$HOME/.suckless/dwmblocks/scripts/mic",    1,  10},
     {"$HOME/.suckless/dwmblocks/scripts/memory", 1,  10},
     {"$HOME/.suckless/dwmblocks/scripts/cpu",    1,  10},
     {"$HOME/.suckless/dwmblocks/scripts/date",   15, 10},

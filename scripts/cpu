@@ -4,7 +4,7 @@ cpu_load=$(grep -o "^[^ ]*" /proc/loadavg)
 
 if [ -f "$colors_path" ]; then
   source $colors_path
-  echo "^b$color1^^c$color0^  $cpu_load ^d^"
+  echo "^b$color1^^c$color0^  $cpu_load ^d^"
 else 
   printf "^c#3b414d^ ^b#7ec7a2^ CPU"
   printf "^c#abb2bf^ ^b#353b45^ $cpu_load"

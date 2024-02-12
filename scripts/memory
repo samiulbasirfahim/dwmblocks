@@ -4,7 +4,7 @@ memory_usage=$(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)
 
 if [ -f "$colors_path" ]; then
   source $colors_path
-  echo "^b$color1^^c$color0^  $memory_usage ^d^"
+  echo "^b$color1^^c$color0^  $memory_usage "
 else 
   echo " $memory_usage_percantagae  $memory_usage "
 fi
