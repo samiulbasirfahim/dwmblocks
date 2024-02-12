@@ -1,11 +1,9 @@
 colors_path=$HOME/.cache/wal/colors.sh
-
-cpu_load=$(grep -o "^[^ ]*" /proc/loadavg)
-
+cpu_usage=$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}')
+cpu_usage=$(printf "%.0f" "$cpu_usage")
 if [ -f "$colors_path" ]; then
   source $colors_path
-  echo "^b$color1^^c$color0^  $cpu_load ^d^"
+  echo "^b$color1^^c$color0^  $cpu_usage% ^d^"
 else 
-  printf "^c#3b414d^ ^b#7ec7a2^ CPU"
-  printf "^c#abb2bf^ ^b#353b45^ $cpu_load"
+  echo "  $(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}') "
 fi

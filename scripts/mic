@@ -2,9 +2,10 @@
 colors_path=$HOME/.cache/wal/colors.sh
 
 mic=$(wpctl get-volume @DEFAULT_SOURCE@ | awk -F "Volume: " '{print $2}')
-
+mic=$(echo "$mic * 100" | bc)
+mic=$(printf "%.0f" "$mic")
 if [ -f "$colors_path" ]; then
   source $colors_path
-  echo "^c$color0^^b$color1^  $mic ^d^"
+  echo "^c$color0^^b$color1^  $mic% ^d^"
 fi
 
