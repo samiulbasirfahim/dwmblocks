@@ -3,7 +3,7 @@
 A [`dwm`](https://dwm.suckless.org) status bar that has a modular, async
 design, so it is always responsive. Imagine `i3blocks`, but for `dwm`.
 
-![A lean config of dwmblocks-async.](preview.png)
+![A lean config of dwmblocks-async.]([preview.png](https://github.com/xenoxanite/dwmblocks/assets/137907119/7a719c1c-3caf-4f9c-93d9-63d74bf8441f))
 
 ## Features
 
