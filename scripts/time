@@ -1,3 +1,4 @@
+#!/bin/env bash
 colors_path=$HOME/.cache/wal/colors.sh
 if [ -f "$colors_path" ]; then
   source $colors_path
