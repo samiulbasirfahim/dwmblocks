@@ -8,8 +8,8 @@ Block blocks[] = {
   // {"$HOME/.suckless/dwmblocks/scripts/network", 5,  3},
     // {"$HOME/.suckless/dwmblocks/scripts/volume", 1,  2},
     // {"$HOME/.suckless/dwmblocks/scripts/mic",    1,  1},
-    {"$HOME/.suckless/dwmblocks/scripts/volume_mic",    3,  0},
-    {"$HOME/.suckless/dwmblocks/scripts/memory_cpu",    3,  0},
+    {"$HOME/.suckless/dwmblocks/scripts/volume_mic",    2,  0},
+    {"$HOME/.suckless/dwmblocks/scripts/memory_cpu",    2,  0},
     {"$HOME/.suckless/dwmblocks/scripts/date",   30, 0},
 };
 
