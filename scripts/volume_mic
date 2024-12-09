@@ -15,3 +15,4 @@ if [ -f "$colors_path" ]; then
   source $colors_path
   echo "^b$color4^^c$color0^  $vol ^d^^b$color8^^c$color0^  $mic ^d^"
 fi
+
