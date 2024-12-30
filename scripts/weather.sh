@@ -6,5 +6,5 @@ TEMP=$(echo $WEATHER | tr "," "\n" | grep "°C")
 
 if [ -f "$colors_path" ]; then
     source $colors_path
-    [[ ! -z "$TEMP" ]] && echo "^b$color4^^c$color0^ 󱩱  ^d^^b$color8^^c$color0^$TEMP ^d^"
+    [[ ! -z "$TEMP" ]] && echo "^b$color1^^c$color0^  ^d^^b$color8^^c$color0^$TEMP ^d^"
 fi

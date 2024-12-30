@@ -9,7 +9,8 @@ Block blocks[] = {
     /* {"$HOME/.suckless/dwmblocks/scripts/volume", 1, 2}, */
     {"$HOME/.suckless/dwmblocks/scripts/weather.sh",   60,  0},
     /* {"$HOME/.suckless/dwmblocks/scripts/volume_mic",    3,  0}, */
-    {"$HOME/.suckless/dwmblocks/scripts/memory_cpu", 3, 0},
+    {"$HOME/.suckless/dwmblocks/scripts/memory", 3, 0},
+    {"$HOME/.suckless/dwmblocks/scripts/cpu", 3, 0},
     {"$HOME/.suckless/dwmblocks/scripts/date", 60, 0},
 };
 
