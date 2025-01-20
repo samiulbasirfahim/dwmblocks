@@ -4,10 +4,10 @@
 #include "util.h"
 
 Block blocks[] = {
-    {"_dwmbar_weather",   60,  0},
-    {"_dwmbar_memory", 3, 0},
-    {"_dwmbar_cpu", 3, 0},
-    {"_dwmbar_date", 60, 0},
+    {"~/.suckless/dwmblocks/scripts/weather.sh",   60,  0},
+    {"~/.suckless/dwmblocks/scripts/memory", 3, 0},
+    {"~/.suckless/dwmblocks/scripts/cpu", 3, 0},
+    {"~/.suckless/dwmblocks/scripts/date", 60, 0},
 };
 
 const unsigned short blockCount = LEN(blocks);
